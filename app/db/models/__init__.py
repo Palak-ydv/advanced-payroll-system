@@ -1,7 +1,7 @@
-"""Database models"""
+"""Database models package"""
 from app.db.models.user import User
 from app.db.models.employee import Employee, Department, Designation
-from app.db.models.salary import SalaryStructure, SalaryComponent, SalarySlip
+from app.db.models.salary import SalaryComponent, SalaryStructure, SalarySlip, SalarySlipDetail
 from app.db.models.attendance import Attendance
 from app.db.models.leave import Leave, LeaveRequest
 from app.db.models.tax import TaxConfiguration, TaxDeduction
@@ -12,9 +12,10 @@ __all__ = [
     "Employee",
     "Department",
     "Designation",
-    "SalaryStructure",
     "SalaryComponent",
+    "SalaryStructure",
     "SalarySlip",
+    "SalarySlipDetail",
     "Attendance",
     "Leave",
     "LeaveRequest",
